@@ -24,6 +24,8 @@
     "typescript": "^5.9.3"
   },
   "dependencies": {
+    "@rbxts/document-service": "^1.2.2-ts.1",
+    "@rbxts/react": "^17.2.3",
     "@rbxts/services": "^1.6.0"
   }
 }
