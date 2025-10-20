@@ -25,7 +25,8 @@
   },
   "dependencies": {
     "@rbxts/document-service": "^1.2.2-ts.1",
-    "@rbxts/react": "^17.2.3",
+    "@rbxts/react": "^17.3.5-alpha.2",
+    "@rbxts/react-roblox": "^17.3.5-alpha.2",
     "@rbxts/services": "^1.6.0"
   }
 }

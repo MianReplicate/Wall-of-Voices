@@ -101,9 +101,15 @@ class Messages {
         return uuid;
     }
 
+    public removeMessage(uuid: string){
+        // send a signal to all servers
+    }
+
     public updateMessage(uuid: string, content: string) {
         this.messages.get(uuid)?.setContent(content);
         this.updateCache();
+
+        // send a signal to all servers
     }
 }
 
@@ -118,3 +124,6 @@ type SerializedMessage = {
 }
 
 const messages = new Messages();
+messages.addMessage(new Message(12, "dawd", new Vector2(2, 2)))
+task.wait(1)
+messages.addMessage(new Message(13, "grr", new Vector2(3, 3)))
