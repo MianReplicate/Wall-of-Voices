@@ -254,8 +254,6 @@ class Messages {
                     }
                 }
             });
-
-            bushes.addBush(Bush.createNewBush());
         });
     }
 
@@ -320,6 +318,7 @@ class Messages {
         const uuid = HttpService.GenerateGUID(false);
         this.pendingMessages.set(uuid, message);
         this.cachedMessages.set(uuid, message);
+        bushes.addBush(Bush.createNewBush());
         this.updateCache();
         return uuid;
     }
